@@ -13,19 +13,19 @@ class IranAppMarket {
     AppMarket.jhoobin : 3,
   };
 
-  void showAppPage(AppMarket market){
+  static void showAppPage(AppMarket market){
     _channel.invokeMethod("showAppPage",{
       'market_id' : _market_id[market],
     });
   }
 
-  void showAppComments(AppMarket market){
+  static void showAppComments(AppMarket market){
     _channel.invokeMethod("showAppComments",{
       'market_id' : _market_id[market],
     });
   }
 
-  void showDeveloperApps(AppMarket market, String developerId){
+  static void showDeveloperApps(AppMarket market, String developerId){
     _channel.invokeMethod("showDeveloperApps",{
       'market_id' : _market_id[market],
       'developer_id' : developerId,
