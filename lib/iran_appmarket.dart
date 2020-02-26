@@ -1,13 +1,3 @@
-import 'dart:async';
 
-import 'package:flutter/services.dart';
-
-class IranAppmarket {
-  static const MethodChannel _channel =
-      const MethodChannel('iran_appmarket');
-
-  static Future<String> get platformVersion async {
-    final String version = await _channel.invokeMethod('getPlatformVersion');
-    return version;
-  }
-}
+export 'src/iran_app_market.dart';
+export 'src/app_market.dart';
