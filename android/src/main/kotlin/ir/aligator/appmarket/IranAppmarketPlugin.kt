@@ -33,7 +33,7 @@ public class IranAppmarketPlugin: FlutterPlugin, MethodCallHandler {
     }
   }
 
-  override fun onMethodCall(@NonNull call: MethodCall, @NonNull result: Result) {
+  override fun onMethodCall(call: MethodCall, result: Result) {
     when(call.method){
       "showAppPage" -> {
         val marketId = call.argument<Long>("market_id")!!.toInt()
