@@ -3,6 +3,7 @@ package ir.aligator.appmarket.markets
 import android.content.Context
 import android.content.Intent
 import android.net.Uri
+import android.provider.CalendarContract
 import ir.aligator.appmarket.exceptions.FeatureNotSupportedException
 
 class Jhoobin(private val context: Context) : AppMarket {
