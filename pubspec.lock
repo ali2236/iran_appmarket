@@ -13,6 +13,20 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  get_version:
+    dependency: "direct main"
+    description:
+      name: get_version
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.2.1"
+  intent:
+    dependency: "direct main"
+    description:
+      name: intent
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.1.0"
   meta:
     dependency: transitive
     description:
@@ -20,6 +34,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.1.8"
+  package_info:
+    dependency: transitive
+    description:
+      name: package_info
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.4.0+14"
   sky_engine:
     dependency: transitive
     description: flutter
@@ -41,3 +62,4 @@ packages:
     version: "2.0.8"
 sdks:
   dart: ">=2.2.2 <3.0.0"
+  flutter: ">=1.10.0 <2.0.0"

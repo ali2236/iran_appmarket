@@ -12,8 +12,8 @@ class IranApps(private val context: Context) : AppMarket {
 
     override fun showAppPage(packageId: String) {
         val intent = Intent(Intent.ACTION_VIEW)
-        intent.setPackage("iranapps://app/$packageId")
-        intent.data = Uri.parse("")
+        intent.setPackage("ir.tgbs.android.iranapp")
+        intent.data = Uri.parse("iranapps://app/$packageId")
         context.startActivity(intent)
     }
 

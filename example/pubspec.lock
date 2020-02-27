@@ -74,6 +74,13 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  get_version:
+    dependency: transitive
+    description:
+      name: get_version
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.2.1"
   image:
     dependency: transitive
     description:
@@ -81,13 +88,20 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.1.4"
+  intent:
+    dependency: transitive
+    description:
+      name: intent
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.1.0"
   iran_appmarket:
     dependency: "direct dev"
     description:
       path: ".."
       relative: true
     source: path
-    version: "0.2.1"
+    version: "0.3.0"
   matcher:
     dependency: transitive
     description:
@@ -102,6 +116,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.1.8"
+  package_info:
+    dependency: transitive
+    description:
+      name: package_info
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.4.0+14"
   path:
     dependency: transitive
     description:
@@ -200,3 +221,4 @@ packages:
     version: "3.5.0"
 sdks:
   dart: ">=2.4.0 <3.0.0"
+  flutter: ">=1.10.0 <2.0.0"
