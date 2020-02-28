@@ -1,31 +1,28 @@
-import 'package:intent/action.dart';
-import 'package:intent/intent.dart';
+import 'package:android_intent/android_intent.dart';
 import 'package:iran_appmarket/iran_appmarket.dart';
 
 class Myket implements IAppMarket {
-
   @override
   void showAppPage(String packageName) {
-    Intent()
-      ..setAction(Action.ACTION_VIEW)
-      ..setData(Uri.parse('myket://details?id=$packageName'))
-      ..startActivity();
+    AndroidIntent(
+      action: "android.intent.action.VIEW",
+      data: 'myket://details?id=$packageName',
+    ).launch();
   }
 
   @override
   void showAppComments(String packageName) {
-    Intent()
-      ..setAction(Action.ACTION_VIEW)
-      ..setData(Uri.parse('myket://comment?id=$packageName'))
-      ..startActivity();
+    AndroidIntent(
+      action: "android.intent.action.VIEW",
+      data: 'myket://comment?id=$packageName',
+    ).launch();
   }
 
   @override
   void showDeveloperApps(String developerId) {
-    Intent()
-      ..setAction(Action.ACTION_VIEW)
-      ..setData(Uri.parse('myket://developer/$developerId'))
-      ..startActivity();
+    AndroidIntent(
+      action: "android.intent.action.VIEW",
+      data: 'myket://developer/$developerId',
+    ).launch();
   }
-
 }

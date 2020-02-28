@@ -1,5 +1,8 @@
 package ir.aligator.appmarket.markets
 
+import android.app.Application
+import android.content.ComponentName
+import android.content.ContentUris
 import android.content.Context
 import android.content.Intent
 import android.net.Uri

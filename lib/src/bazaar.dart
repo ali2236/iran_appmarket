@@ -1,7 +1,4 @@
-import 'package:intent/action.dart';
-import 'package:intent/extra.dart';
-import 'package:intent/intent.dart';
-
+import 'package:android_intent/android_intent.dart';
 import 'app_market.dart';
 
 class CafeBazaar implements IAppMarket {
@@ -9,28 +6,34 @@ class CafeBazaar implements IAppMarket {
 
   @override
   void showAppPage(String packageName) {
-    Intent()
-      ..setAction(Action.ACTION_VIEW)
-      ..setData(Uri.parse('bazaar://details?id=$packageName'))
-      ..putExtra(Extra.EXTRA_PACKAGE_NAME, bazaar)
-      ..startActivity();
+    AndroidIntent(
+      action: "android.intent.action.VIEW",
+      data: 'bazaar://details?id=$packageName',
+      arguments: {
+        "android.intent.extra.PACKAGE_NAME" : bazaar,
+      },
+    ).launch();
   }
 
   @override
   void showAppComments(String packageName) {
-    Intent()
-      ..setAction(Action.ACTION_EDIT)
-      ..setData(Uri.parse('bazaar://details?id=$packageName'))
-      ..putExtra(Extra.EXTRA_PACKAGE_NAME, bazaar)
-      ..startActivity();
+    AndroidIntent(
+      action: "android.intent.action.EDIT",
+      data: 'bazaar://details?id=$packageName',
+      arguments: {
+        "android.intent.extra.PACKAGE_NAME" : bazaar,
+      },
+    ).launch();
   }
 
   @override
   void showDeveloperApps(String developerId) {
-    Intent()
-      ..setAction(Action.ACTION_VIEW)
-      ..setData(Uri.parse("bazaar://collection?slug=by_author&aid=$developerId"))
-      ..putExtra(Extra.EXTRA_PACKAGE_NAME, bazaar)
-      ..startActivity();
+    AndroidIntent(
+      action: "android.intent.action.VIEW",
+      data: 'bazaar://collection?slug=by_author&aid=$developerId',
+      arguments: {
+        "android.intent.extra.PACKAGE_NAME" : bazaar,
+      },
+    ).launch();
   }
 }
