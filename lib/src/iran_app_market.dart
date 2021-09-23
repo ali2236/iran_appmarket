@@ -1,7 +1,7 @@
 
 import 'package:flutter/services.dart';
-import 'package:get_version/get_version.dart';
 import 'package:iran_appmarket/src/app_market.dart';
+import 'package:package_info_plus/package_info_plus.dart';
 
 class IranAppMarket {
 
@@ -15,27 +15,17 @@ class IranAppMarket {
   };
 
   static void showAppPage(AppMarket market) async{
-    final packageName = await GetVersion.appID;
+    final packageName = (await PackageInfo.fromPlatform()).packageName;
     IAppMarket.ofType(market).showAppPage(packageName);
-/*    _channel.invokeMethod("showAppPage",{
-      'market_id' : _market_id[market],
-    });*/
   }
 
   static void showAppComments(AppMarket market) async{
-    final packageName = await GetVersion.appID;
+    final packageName = (await PackageInfo.fromPlatform()).packageName;
     IAppMarket.ofType(market).showAppComments(packageName);
-/*    _channel.invokeMethod("showAppComments",{
-      'market_id' : _market_id[market],
-    });*/
   }
 
   static void showDeveloperApps(AppMarket market, String developerId) async{
     IAppMarket.ofType(market).showDeveloperApps(developerId);
-/*    _channel.invokeMethod("showDeveloperApps",{
-      'market_id' : _market_id[market],
-      'developer_id' : developerId,
-    });*/
   }
 
 }
