@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Flutter Plugins" type="FlutterPluginsLibraryType">
     <CLASSES>
-      <root url="file://C:/src/flutter/.pub-cache/hosted/pub.dartlang.org/get_version-0.2.1" />
-      <root url="file://C:/src/flutter/.pub-cache/hosted/pub.dartlang.org/package_info-0.4.0+14" />
-      <root url="file://C:/src/flutter/.pub-cache/hosted/pub.dartlang.org/android_intent-0.3.5+1" />
+      <root url="file://$PROJECT_DIR$/../../../../src/flutter/.pub-cache/hosted/pub.dartlang.org/android_intent-2.0.2" />
+      <root url="file://$PROJECT_DIR$/../../../../src/flutter/.pub-cache/hosted/pub.dartlang.org/get_version-0.2.1" />
+      <root url="file://$PROJECT_DIR$/../../../../src/flutter/.pub-cache/hosted/pub.dartlang.org/package_info-0.4.0+14" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

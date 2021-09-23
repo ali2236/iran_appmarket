@@ -23,7 +23,6 @@ abstract class IAppMarket {
       case AppMarket.iranApps:
         return IranApps();
     }
-    return null;
   }
 
   void showAppPage(String packageName);
@@ -38,5 +37,5 @@ String appMarketName(AppMarket appMarket){
     AppMarket.jhoobin: 'Jhoobin',
     AppMarket.iranApps: 'IranApps'
   };
-  return names[appMarket];
+  return names[appMarket]!;
 }
