@@ -1,6 +1,6 @@
 name: iran_appmarket
 description: A Flutter plugin to open the apps page in an iranian android market.
-version: 1.0.0
+version: 1.1.0
 homepage: https://github.com/ali2236/iran_appmarket
 
 environment:
@@ -9,5 +9,5 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  package_info_plus: ^1.0.0
+  package_info_plus: ^3.0.0
   android_intent: ^2.0.0
