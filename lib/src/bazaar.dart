@@ -1,4 +1,4 @@
-import 'package:android_intent/android_intent.dart';
+import 'package:android_intent_plus/android_intent.dart';
 import 'app_market.dart';
 
 class CafeBazaar implements IAppMarket {

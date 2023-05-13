@@ -1,4 +1,4 @@
-import 'package:android_intent/android_intent.dart';
+import 'package:android_intent_plus/android_intent.dart';
 import 'package:iran_appmarket/iran_appmarket.dart';
 
 class Myket implements IAppMarket {
